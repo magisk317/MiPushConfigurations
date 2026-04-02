@@ -209,12 +209,53 @@
         "stop": false
       }
     ],
+    "飞书-副标题修复": [
+      {
+        "metaInfo": {
+          "title": "通知汇总"
+        },
+        "newMetaInfo": {
+          "extra": {
+            "__mi_push_sub_text": ""
+          }
+        },
+        "stop": false
+      },
+      {
+        "metaInfo": {
+          "extra": {
+            "__lark_channel_name": null
+          }
+        },
+        "newMetaInfo": {
+          "extra": {
+            "__mi_push_sub_text": ""
+          }
+        },
+        "stop": false
+      },
+      {
+        "metaInfo": {
+          "title": "(?<group>[\\s\\S]+)",
+          "extra": {
+            "__lark_channel_name": ""
+          }
+        },
+        "newMetaInfo": {
+          "extra": {
+            "__mi_push_sub_text": "${group}"
+          }
+        },
+        "stop": false
+      }
+    ],
     "飞书": [
       "飞书-提取 payload",
       "飞书-消息类型标记",
       "飞书-头像支持",
       "飞书-消息分类",
       "飞书-会话概念修复",
+      "飞书-副标题修复",
       "飞书-MessagingStyle"
     ],
     "com.ss.android.lark.salhdz": [
