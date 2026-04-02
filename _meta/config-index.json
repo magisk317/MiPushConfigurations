@@ -1,0 +1,294 @@
+{
+  "sourceRepo": "magisk317/MiPushConfigurations",
+  "branch": "dev",
+  "generatedAt": "2026-04-02T04:24:56.865909Z",
+  "files": [
+    {
+      "path": "0_基础配置_工具.json",
+      "name": "0_基础配置_工具",
+      "sha": "ef1ee0d5a9e64488b3d256270b4b426fb65c80aa63ed25c7498623be26fa7670",
+      "size": 1400,
+      "updatedAt": "2023-05-23T16:53:03+08:00"
+    },
+    {
+      "path": "0_基础配置_开关.json",
+      "name": "0_基础配置_开关",
+      "sha": "828d2776a983cf0d827f103b9961abce55e1434ae9f6dc23aeb279481808ee74",
+      "size": 3270,
+      "updatedAt": "2023-05-23T16:53:03+08:00"
+    },
+    {
+      "path": "0_基础配置_消息样式相关.json",
+      "name": "0_基础配置_消息样式相关",
+      "sha": "42073802539357dbe5841dd92d38ead5e35848b426269f9904ca98d9277bdbc3",
+      "size": 3880,
+      "updatedAt": "2023-08-16T23:20:36+08:00"
+    },
+    {
+      "path": "2_后置配置.json",
+      "name": "2_后置配置",
+      "sha": "30a8e15c8d89d07c310241956d484adecadbfbb28506fd9452a2b6098a80ffc6",
+      "size": 709,
+      "updatedAt": "2025-04-29T17:16:30+08:00"
+    },
+    {
+      "path": "2_后置配置_只显示一条消息-白名单.json",
+      "name": "2_后置配置_只显示一条消息-白名单",
+      "sha": "c8038daadebd426999e2cf2a315d6f56f1e3a960088058c42c17e66c613d5df6",
+      "size": 702,
+      "updatedAt": "2023-05-29T11:18:22+08:00"
+    },
+    {
+      "path": "2_后置配置_堆叠同一会话的所有通知-白名单.json",
+      "name": "2_后置配置_堆叠同一会话的所有通知-白名单",
+      "sha": "cd3649ddd2072bc81b4efcc0b614c8cb78270cfe97d812b4ffd82841eba33db5",
+      "size": 938,
+      "updatedAt": "2023-08-16T23:04:22+08:00"
+    },
+    {
+      "path": "2_后置配置_将标题相同的通知视为同一会话-白名单.json",
+      "name": "2_后置配置_将标题相同的通知视为同一会话-白名单",
+      "sha": "52c244fc1739365b3c18d6eb763b1dc8921a1f2eb87d38e94d3de7821cbe684a",
+      "size": 391,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_将标题相同的通知视为同一会话-黑名单.json",
+      "name": "2_后置配置_将标题相同的通知视为同一会话-黑名单",
+      "sha": "5992ca4490157bd41b2f3c02baa5d133cffcddf188956c830c0bb1ae515e4345",
+      "size": 395,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_将透传消息作为通知显示-白名单.json",
+      "name": "2_后置配置_将透传消息作为通知显示-白名单",
+      "sha": "d2e55e2005c8c9cbe2478a4322701a26df85513d602c1f4145408e13f353b073",
+      "size": 618,
+      "updatedAt": "2023-08-16T23:04:22+08:00"
+    },
+    {
+      "path": "2_后置配置_屏蔽运营消息-白名单.json",
+      "name": "2_后置配置_屏蔽运营消息-白名单",
+      "sha": "5884d8cdee75e4ef46a9a2f16ed1cf54544d1f22efaa4348f1912b4260761ddb",
+      "size": 344,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_屏蔽运营消息-黑名单.json",
+      "name": "2_后置配置_屏蔽运营消息-黑名单",
+      "sha": "a30b1b2d60da0ff1eebc53ef386805b8462a34b2d7ad81edda4cd3f8890dafde",
+      "size": 347,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_收到消息后台唤醒应用-白名单.json",
+      "name": "2_后置配置_收到消息后台唤醒应用-白名单",
+      "sha": "e2b0b9ec44b167c34bfcd3682661f057570de9ee6024f9b7c5fbb1f5b1a4571a",
+      "size": 539,
+      "updatedAt": "2023-07-17T10:18:12+08:00"
+    },
+    {
+      "path": "2_后置配置_无图标聊天消息显示名字为图标.json",
+      "name": "2_后置配置_无图标聊天消息显示名字为图标",
+      "sha": "6c4f915bd053852f43bef7e9558d72189d1ec3c719f42ec0e057bf5338126635",
+      "size": 497,
+      "updatedAt": "2025-04-29T17:16:30+08:00"
+    },
+    {
+      "path": "2_后置配置_消息样式为每条消息添加起始标识.json",
+      "name": "2_后置配置_消息样式为每条消息添加起始标识",
+      "sha": "75e07e26283177a4f52c3dc485b4f7a2a9a3bbc9cc23c34ec36b6ef89f277450",
+      "size": 152,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_点击时清理会话通知组-白名单.json",
+      "name": "2_后置配置_点击时清理会话通知组-白名单",
+      "sha": "4f3e0d517c66c9b2647931458239197bb55cdbdda7923e5532d9a4c3707b81a7",
+      "size": 676,
+      "updatedAt": "2023-08-16T23:04:22+08:00"
+    },
+    {
+      "path": "2_后置配置_直接打开意图-白名单.json",
+      "name": "2_后置配置_直接打开意图-白名单",
+      "sha": "4f08e2192caede7c65effc754bc4ddaa88646b35afb4ed16394cdc9814285072",
+      "size": 358,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_直接打开意图-黑名单.json",
+      "name": "2_后置配置_直接打开意图-黑名单",
+      "sha": "9d11bf7f1671f8ab75958fb69c7442c7adb388f0093a68c186be1fc15282ba85",
+      "size": 927,
+      "updatedAt": "2023-08-16T22:55:25+08:00"
+    },
+    {
+      "path": "2_后置配置_移除通知副标题.json",
+      "name": "2_后置配置_移除通知副标题",
+      "sha": "918da019f2036c65d551d3eedc6d1f9ad53abcd94059cc7198270291fb645d7d",
+      "size": 113,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "2_后置配置_群聊消息按群分组-白名单.json",
+      "name": "2_后置配置_群聊消息按群分组-白名单",
+      "sha": "ad5ddc19fd4b83c5f4ea95468263cdc3bd73de633efa1f309daf2c5f7f92b56e",
+      "size": 638,
+      "updatedAt": "2023-08-16T23:06:57+08:00"
+    },
+    {
+      "path": "2_后置配置_聊天消息按渠道分组-黑名单.json",
+      "name": "2_后置配置_聊天消息按渠道分组-黑名单",
+      "sha": "2683306f66ae730436282a028c865b0859149b59bb98425f5a9a2170fa8089b6",
+      "size": 592,
+      "updatedAt": "2023-08-16T23:06:57+08:00"
+    },
+    {
+      "path": "2_后置配置_聊天消息按类型分组-黑名单.json",
+      "name": "2_后置配置_聊天消息按类型分组-黑名单",
+      "sha": "3674e931a592e0f1c7b98ddd90317318b447d5929551364ec4f91d6b37bfbb34",
+      "size": 619,
+      "updatedAt": "2023-08-16T23:06:57+08:00"
+    },
+    {
+      "path": "2_后置配置_聊天消息聚合成一组-白名单.json",
+      "name": "2_后置配置_聊天消息聚合成一组-白名单",
+      "sha": "e3ee40576a6118641e83965663e51c5be478fcbb116dbf9f9492a513270ea2fb",
+      "size": 549,
+      "updatedAt": "2023-08-16T23:06:57+08:00"
+    },
+    {
+      "path": "2_后置配置_自动提取意图.json",
+      "name": "2_后置配置_自动提取意图",
+      "sha": "efb32c23a5d82997860d4b2bc648142a73f4ded6ed18c44d1fdbfb35256b487a",
+      "size": 114,
+      "updatedAt": "2023-05-23T16:18:29+08:00"
+    },
+    {
+      "path": "cmb.pb_招商银行.json",
+      "name": "cmb.pb_招商银行",
+      "sha": "42bd5f477646c9bd18f1d648b160b4ab6e476974c2992c48763ae1820704d00f",
+      "size": 3044,
+      "updatedAt": "2023-08-16T23:32:39+08:00"
+    },
+    {
+      "path": "cmb.pb_招商银行_卡号替换.json",
+      "name": "cmb.pb_招商银行_卡号替换",
+      "sha": "d32dcdff804e947c126083c1f70e29188b8f467ab834e40e9913c3833af27abb",
+      "size": 630,
+      "updatedAt": "2023-08-16T23:32:39+08:00"
+    },
+    {
+      "path": "com.alibaba.android.rimet_钉钉.json",
+      "name": "com.alibaba.android.rimet_钉钉",
+      "sha": "e5c9dc5ecc50e240d7807df30203740e362550555fdb13c5b116ee2290728eea",
+      "size": 2227,
+      "updatedAt": "2023-05-23T23:13:24+08:00"
+    },
+    {
+      "path": "com.coolapk.market_酷安.json",
+      "name": "com.coolapk.market_酷安",
+      "sha": "94de0b311e9cc39d8f828f5694ad022f51b5a6a3dc68654dea04f60e035c9201",
+      "size": 774,
+      "updatedAt": "2023-01-13T12:02:17+08:00"
+    },
+    {
+      "path": "com.jingyao.easybike_哈啰.json",
+      "name": "com.jingyao.easybike_哈啰",
+      "sha": "849f3560e98affa42af8e3ce0a64fa4b6d164404fff4ef078dd25c5541cf349d",
+      "size": 3458,
+      "updatedAt": "2023-08-16T23:24:05+08:00"
+    },
+    {
+      "path": "com.ss.android.lark_飞书.json",
+      "name": "com.ss.android.lark_飞书",
+      "sha": "067b406f58f68e93d144d8b27bca9d33d2c898f5dcaa8fe1cec5bffb0c5b1500",
+      "size": 5813,
+      "updatedAt": "2023-08-16T23:29:43+08:00"
+    },
+    {
+      "path": "com.ss.android.lark_飞书_MessagingStyle.json",
+      "name": "com.ss.android.lark_飞书_MessagingStyle",
+      "sha": "b8b13408c242f647b99f9cd0bb7da850436c1c341ff5bd6b2fd130cfa45ba7fe",
+      "size": 1072,
+      "updatedAt": "2023-05-29T11:18:45+08:00"
+    },
+    {
+      "path": "com.ss.android.ugc.aweme_抖音.json",
+      "name": "com.ss.android.ugc.aweme_抖音",
+      "sha": "90ee1771a13858d3e9288b9519a0bcd337ae5a723f162b84643b424f428f600e",
+      "size": 3261,
+      "updatedAt": "2023-08-22T11:12:55+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ.json",
+      "name": "com.tencent.mobileqq_QQ",
+      "sha": "0621b949891ef839b719da90996c661e2bc1a4dd6b0784ddda235e1802af311c",
+      "size": 6249,
+      "updatedAt": "2025-05-05T15:47:12+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ_MessagingStyle.json",
+      "name": "com.tencent.mobileqq_QQ_MessagingStyle",
+      "sha": "ad390264e750bf570a6d4cda23a1230d3ac5b3401222b2264385a2d6a1cd17ce",
+      "size": 2489,
+      "updatedAt": "2023-01-19T16:18:52+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ_复用QA通知渠道.json",
+      "name": "com.tencent.mobileqq_QQ_复用QA通知渠道",
+      "sha": "211a6a3604ca388745b6ddf351d3dfef5fed9cc38dcb4d92257c770b64a048f3",
+      "size": 900,
+      "updatedAt": "2023-08-16T23:15:59+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ_意图重整.json",
+      "name": "com.tencent.mobileqq_QQ_意图重整",
+      "sha": "ee9dc7afe1235f1eec0e07910a9c3f1402c0f99e4cf6e925a9d14728c3bf75ed",
+      "size": 1025,
+      "updatedAt": "2023-08-16T23:14:59+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ_群头像支持（不装则显示具体群友头像）.json",
+      "name": "com.tencent.mobileqq_QQ_群头像支持（不装则显示具体群友头像）",
+      "sha": "6384a45ab3089ec828d8b95ed4fc125fe2d10de40a012c567dde6c9ed5920446",
+      "size": 408,
+      "updatedAt": "2023-01-19T16:18:52+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ_群消息整形-群名标题前添加发送者.json",
+      "name": "com.tencent.mobileqq_QQ_群消息整形-群名标题前添加发送者",
+      "sha": "60f4ee95b0e8d46a9e14162a272bd70ddbeac3b330bc20d0601f6aa407d6ee70",
+      "size": 541,
+      "updatedAt": "2023-01-13T12:02:17+08:00"
+    },
+    {
+      "path": "com.tencent.mobileqq_QQ_群消息整形-群名移动至 subtext.json",
+      "name": "com.tencent.mobileqq_QQ_群消息整形-群名移动至 subtext",
+      "sha": "43ed33580d253b06df3ac0d5b55f26f77ef021724f68d981188f8d5384a77e17",
+      "size": 575,
+      "updatedAt": "2023-01-13T12:02:17+08:00"
+    },
+    {
+      "path": "com.xunmeng.pinduoduo_拼多多.json",
+      "name": "com.xunmeng.pinduoduo_拼多多",
+      "sha": "d422c270efab29eb05048cda61e91abb445399fedda94aff18252228039fea9d",
+      "size": 816,
+      "updatedAt": "2023-01-13T12:02:17+08:00"
+    },
+    {
+      "path": "com.zhihu.android_知乎.json",
+      "name": "com.zhihu.android_知乎",
+      "sha": "ab2b11be8eb2800078bed6b55e8e2740e82994b5a80a12c76e969fe19bc30d88",
+      "size": 771,
+      "updatedAt": "2023-08-16T23:08:21+08:00"
+    },
+    {
+      "path": "com.zhihu.android_知乎_忽略盐选内容.json",
+      "name": "com.zhihu.android_知乎_忽略盐选内容",
+      "sha": "829b274db6d352cc5f06fc6042cc83dd8765c1345b547c45a188dc80e8b2a58f",
+      "size": 431,
+      "updatedAt": "2023-08-16T23:08:21+08:00"
+    }
+  ]
+}
