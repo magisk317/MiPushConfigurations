@@ -29,7 +29,7 @@
 ## 配置使用方式
 1. 设置配置目录，入口位于：推送服务 - 设置
 2. 下载所需配置放入该目录中
-3. （可选）若需自定义通知图标，可以在配置目录下创建 `icon` 文件夹，将 [AndroidNotifyIconAdapt](https://github.com/fankes/AndroidNotifyIconAdapt) 仓库的 `json` 文件放入其中
+3. 通过远端同步拉取配置时，会一并拉取 `icon/NotifyIconsSupportConfig.json` 作为默认通知小图标适配；也可以在配置目录下的 `icon` 文件夹中覆盖或追加自定义图标配置
 
 ## 配置推荐
 - QQ

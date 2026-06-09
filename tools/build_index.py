@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 META_DIR = REPO_ROOT / "_meta"
 OUTPUT_PATH = META_DIR / "config-index.json"
 SOURCE_REPO = "magisk317/MiPushConfigurations"
+INDEXED_SUBDIRS = ("icon",)
 
 
 @dataclass(frozen=True)
@@ -40,12 +41,23 @@ def get_current_branch() -> str:
 
 
 def get_last_updated_at(path: str) -> str:
-    return git("log", "-1", "--format=%cI", "--", path)
+    updated_at = git("log", "-1", "--format=%cI", "--", path)
+    return updated_at or datetime.fromtimestamp((REPO_ROOT / path).stat().st_mtime, timezone.utc).isoformat()
+
+
+def iter_json_paths() -> list[Path]:
+    files = list(REPO_ROOT.glob("*.json"))
+    for directory_name in INDEXED_SUBDIRS:
+        directory = REPO_ROOT / directory_name
+        if directory.is_dir():
+            files.extend(directory.glob("*.json"))
+    return sorted(files, key=lambda file: file.relative_to(REPO_ROOT).as_posix())
 
 
 def iter_config_files() -> list[ConfigFile]:
     files: list[ConfigFile] = []
-    for file in sorted(REPO_ROOT.glob("*.json")):
+    for file in iter_json_paths():
+        relative_path = file.relative_to(REPO_ROOT).as_posix()
         raw_text = file.read_text(encoding="utf-8-sig")
         canonical = json.dumps(
             json.loads(raw_text),
@@ -56,11 +68,11 @@ def iter_config_files() -> list[ConfigFile]:
         content = raw_text.encode("utf-8")
         files.append(
             ConfigFile(
-                path=file.name,
-                name=file.stem,
+                path=relative_path,
+                name=relative_path.removesuffix(".json"),
                 sha=hashlib.sha256(canonical.encode("utf-8")).hexdigest(),
                 size=len(content),
-                updated_at=get_last_updated_at(file.name),
+                updated_at=get_last_updated_at(relative_path),
             )
         )
     return files
