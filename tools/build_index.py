@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import sys
 import subprocess
 from dataclasses import dataclass
@@ -38,6 +39,9 @@ def git(*args: str) -> str:
 
 
 def get_current_branch() -> str:
+    ci_ref = os.environ.get("CI_COMMIT_REF_NAME") or os.environ.get("CI_COMMIT_BRANCH")
+    if ci_ref:
+        return ci_ref
     return git("rev-parse", "--abbrev-ref", "HEAD")
 
 
