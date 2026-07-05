@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 import subprocess
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -13,7 +14,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 META_DIR = REPO_ROOT / "_meta"
 OUTPUT_PATH = META_DIR / "config-index.json"
-SOURCE_REPO = "magisk317/MiPushConfigurations"
+SOURCE_REPO = "gitlab:magisk3171/MiPushConfigurations"
 INDEXED_SUBDIRS = ("icon",)
 
 
@@ -96,7 +97,29 @@ def build_index() -> dict:
     }
 
 
+def comparable_index(index: dict) -> dict:
+    comparable = dict(index)
+    comparable.pop("generatedAt", None)
+    return comparable
+
+
+def check_index() -> None:
+    if not OUTPUT_PATH.exists():
+        raise SystemExit(f"{OUTPUT_PATH.relative_to(REPO_ROOT)} is missing; run tools/build_index.py")
+    current = json.loads(OUTPUT_PATH.read_text(encoding="utf-8-sig"))
+    expected = build_index()
+    if comparable_index(current) != comparable_index(expected):
+        raise SystemExit(
+            f"{OUTPUT_PATH.relative_to(REPO_ROOT)} is out of date; run tools/build_index.py"
+        )
+
+
 def main() -> None:
+    if len(sys.argv) > 1:
+        if sys.argv[1:] == ["--check"]:
+            check_index()
+            return
+        raise SystemExit("usage: tools/build_index.py [--check]")
     META_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(
         json.dumps(build_index(), ensure_ascii=False, indent=2) + "\n",

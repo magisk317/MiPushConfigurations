@@ -1,7 +1,7 @@
 {
-  "sourceRepo": "magisk317/MiPushConfigurations",
+  "sourceRepo": "gitlab:magisk3171/MiPushConfigurations",
   "branch": "dev",
-  "generatedAt": "2026-06-09T14:13:18.270826Z",
+  "generatedAt": "2026-07-05T09:18:44.923852Z",
   "files": [
     {
       "path": "0_基础配置_工具.json",
@@ -209,9 +209,9 @@
     {
       "path": "com.ss.android.lark_飞书_MessagingStyle.json",
       "name": "com.ss.android.lark_飞书_MessagingStyle",
-      "sha": "b8b13408c242f647b99f9cd0bb7da850436c1c341ff5bd6b2fd130cfa45ba7fe",
-      "size": 1072,
-      "updatedAt": "2023-05-29T11:18:45+08:00"
+      "sha": "e93ab1c6bf8772f195c750e0e3dc2abec53c38f6534871d084de88b96be17232",
+      "size": 1135,
+      "updatedAt": "2026-06-15T12:05:09+08:00"
     },
     {
       "path": "com.ss.android.ugc.aweme_抖音.json",
@@ -295,7 +295,7 @@
       "name": "icon/NotifyIconsSupportConfig",
       "sha": "46ec48156511f248343100ee22cfed711cd555c496b6cd05eb3ae49603caca28",
       "size": 1131229,
-      "updatedAt": "2026-06-09T14:12:20.416750+00:00"
+      "updatedAt": "2026-06-09T23:24:18+08:00"
     }
   ]
 }
