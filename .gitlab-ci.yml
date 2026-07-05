@@ -1,8 +1,3 @@
-include:
-  - project: magisk3171/magisk-ci-toolkit
-    ref: master
-    file: /.gitlab/ci/telegram.yml
-
 workflow:
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
@@ -13,7 +8,6 @@ workflow:
 
 stages:
   - build
-  - notify
 
 variables:
   GIT_DEPTH: "0"
@@ -45,15 +39,3 @@ configs:validate:
     expire_in: 14 days
     paths:
       - _meta/config-index.json
-
-telegram:ci:
-  extends: .magisk_telegram_ci
-  stage: notify
-  allow_failure: true
-  variables:
-    MAGISK_TELEGRAM_PROJECT_TAG: "📌 #MiPushConfigurations"
-    MAGISK_TELEGRAM_PROJECT_NAME: "MiPushConfigurations"
-    MAGISK_TELEGRAM_CI_BRANCH: "dev"
-  needs:
-    - job: configs:validate
-      artifacts: true
