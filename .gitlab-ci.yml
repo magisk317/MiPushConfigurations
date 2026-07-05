@@ -23,6 +23,13 @@ configs:validate:
   image: "python:3.13-slim"
   stage: build
   before_script:
+    - |
+      set -euo pipefail
+      sed -i \
+        -e 's#http://deb.debian.org/debian-security#https://mirrors.tuna.tsinghua.edu.cn/debian-security#g' \
+        -e 's#http://security.debian.org/debian-security#https://mirrors.tuna.tsinghua.edu.cn/debian-security#g' \
+        -e 's#http://deb.debian.org/debian#https://mirrors.tuna.tsinghua.edu.cn/debian#g' \
+        /etc/apt/sources.list /etc/apt/sources.list.d/*.sources 2>/dev/null || true
     - apt-get update
     - apt-get install -y --no-install-recommends git
   script:
