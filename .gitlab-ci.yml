@@ -11,7 +11,7 @@ workflow:
 default:
   interruptible: true
   tags:
-    - magisk-local-linux
+    - magisk-amd64-linux
 
 stages:
   - build
