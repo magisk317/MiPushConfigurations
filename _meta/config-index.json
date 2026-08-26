@@ -1,7 +1,7 @@
 {
   "sourceRepo": "gitlab:magisk3171/MiPushConfigurations",
   "branch": "dev",
-  "generatedAt": "2026-07-05T09:18:44.923852Z",
+  "generatedAt": "2026-08-26T08:07:34.971933Z",
   "files": [
     {
       "path": "0_基础配置_工具.json",
@@ -253,14 +253,14 @@
       "name": "com.tencent.mobileqq_QQ_群头像支持（不装则显示具体群友头像）",
       "sha": "6384a45ab3089ec828d8b95ed4fc125fe2d10de40a012c567dde6c9ed5920446",
       "size": 408,
-      "updatedAt": "2023-01-19T16:18:52+08:00"
+      "updatedAt": "2026-08-26T16:04:17+08:00"
     },
     {
       "path": "com.tencent.mobileqq_QQ_群消息整形-群名标题前添加发送者.json",
       "name": "com.tencent.mobileqq_QQ_群消息整形-群名标题前添加发送者",
       "sha": "60f4ee95b0e8d46a9e14162a272bd70ddbeac3b330bc20d0601f6aa407d6ee70",
       "size": 541,
-      "updatedAt": "2023-01-13T12:02:17+08:00"
+      "updatedAt": "2026-08-26T16:04:17+08:00"
     },
     {
       "path": "com.tencent.mobileqq_QQ_群消息整形-群名移动至 subtext.json",
