@@ -17,6 +17,35 @@ META_DIR = REPO_ROOT / "_meta"
 OUTPUT_PATH = META_DIR / "config-index.json"
 SOURCE_REPO = "gitlab:magisk3171/MiPushConfigurations"
 INDEXED_SUBDIRS = ("icon",)
+UTF8_BOM = b"\xef\xbb\xbf"
+
+
+class DuplicateKeyError(ValueError):
+    pass
+
+
+def reject_duplicate_keys(pairs: list[tuple[str, object]]) -> dict[str, object]:
+    result: dict[str, object] = {}
+    for key, value in pairs:
+        if key in result:
+            raise DuplicateKeyError(f"duplicate object key: {key}")
+        result[key] = value
+    return result
+
+
+def load_json(path: Path) -> object:
+    data = path.read_bytes()
+    relative_path = path.relative_to(REPO_ROOT) if path.is_relative_to(REPO_ROOT) else path
+    if data.startswith(UTF8_BOM):
+        raise ValueError(f"{relative_path}: UTF-8 BOM is not allowed")
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError as error:
+        raise ValueError(f"{relative_path}: invalid UTF-8: {error}") from error
+    try:
+        return json.loads(text, object_pairs_hook=reject_duplicate_keys)
+    except (json.JSONDecodeError, DuplicateKeyError) as error:
+        raise ValueError(f"{relative_path}: {error}") from error
 
 
 @dataclass(frozen=True)
@@ -63,14 +92,14 @@ def iter_config_files() -> list[ConfigFile]:
     files: list[ConfigFile] = []
     for file in iter_json_paths():
         relative_path = file.relative_to(REPO_ROOT).as_posix()
-        raw_text = file.read_text(encoding="utf-8-sig")
+        parsed = load_json(file)
         canonical = json.dumps(
-            json.loads(raw_text),
+            parsed,
             ensure_ascii=False,
             separators=(",", ":"),
             sort_keys=True,
         )
-        content = raw_text.encode("utf-8")
+        content = file.read_text(encoding="utf-8").encode("utf-8")
         files.append(
             ConfigFile(
                 path=relative_path,
@@ -110,7 +139,7 @@ def comparable_index(index: dict) -> dict:
 def check_index() -> None:
     if not OUTPUT_PATH.exists():
         raise SystemExit(f"{OUTPUT_PATH.relative_to(REPO_ROOT)} is missing; run tools/build_index.py")
-    current = json.loads(OUTPUT_PATH.read_text(encoding="utf-8-sig"))
+    current = load_json(OUTPUT_PATH)
     expected = build_index()
     if comparable_index(current) != comparable_index(expected):
         raise SystemExit(

@@ -33,19 +33,7 @@ configs:validate:
     - apt-get update
     - apt-get install -y --no-install-recommends git
   script:
-    - |
-      python - <<'PY'
-      import json
-      from pathlib import Path
-
-      root = Path(".")
-      paths = sorted(root.glob("*.json"))
-      paths.extend(sorted(root.glob("icon/*.json")))
-      paths.extend(sorted(root.glob("_meta/*.json")))
-      for path in paths:
-          json.loads(path.read_text(encoding="utf-8-sig"))
-      print(f"validated {len(paths)} json files")
-      PY
+    - python tools/test_build_index.py
     - python tools/build_index.py --check
   artifacts:
     name: "MiPushConfigurations-index-$CI_COMMIT_REF_SLUG"
