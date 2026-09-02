@@ -1,7 +1,7 @@
 {
   "sourceRepo": "gitlab:magisk3171/MiPushConfigurations",
-  "branch": "dev",
-  "generatedAt": "2026-08-26T08:07:34.971933Z",
+  "branch": "beta",
+  "generatedAt": "2026-09-02T11:24:22.568614Z",
   "files": [
     {
       "path": "0_基础配置_工具.json",
