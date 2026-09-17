@@ -56,6 +56,7 @@ cancel:older:mr:pipelines:
 
 sync:github:
   stage: sync
+  needs: []
   image: alpine:latest
   tags:
     - magisk-amd64-linux
