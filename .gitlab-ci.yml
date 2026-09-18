@@ -1,6 +1,6 @@
 include:
   - project: magisk3171/shared/magisk-ci-toolkit
-    ref: 269807205c7e55ee3bba36ae3519d32232296da7
+    ref: v1
     file: /.gitlab/ci/cancel-mr-pipelines.yml
 
 workflow:
@@ -24,7 +24,7 @@ stages:
 
 variables:
   GIT_DEPTH: "0"
-  MAGISK_CI_TOOLKIT_REF: "269807205c7e55ee3bba36ae3519d32232296da7"
+  MAGISK_CI_TOOLKIT_REF: "v1"
   MAGISK_TELEGRAM_PIN: "off"
   MAGISK_CANCEL_OLDER_MR_PIPELINES: "true"
 
