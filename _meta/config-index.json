@@ -1,7 +1,7 @@
 {
   "sourceRepo": "gitlab:magisk3171/MiPushConfigurations",
   "branch": "beta",
-  "generatedAt": "2026-09-02T11:24:22.568614Z",
+  "generatedAt": "2026-10-10T01:16:44.162306Z",
   "files": [
     {
       "path": "0_基础配置_工具.json",
@@ -204,14 +204,14 @@
       "name": "com.ss.android.lark_飞书",
       "sha": "067b406f58f68e93d144d8b27bca9d33d2c898f5dcaa8fe1cec5bffb0c5b1500",
       "size": 5813,
-      "updatedAt": "2026-04-02T12:31:01+08:00"
+      "updatedAt": "2026-09-17T15:17:31+08:00"
     },
     {
       "path": "com.ss.android.lark_飞书_MessagingStyle.json",
       "name": "com.ss.android.lark_飞书_MessagingStyle",
       "sha": "e93ab1c6bf8772f195c750e0e3dc2abec53c38f6534871d084de88b96be17232",
       "size": 1135,
-      "updatedAt": "2026-06-15T12:05:09+08:00"
+      "updatedAt": "2026-09-17T15:17:31+08:00"
     },
     {
       "path": "com.ss.android.ugc.aweme_抖音.json",
@@ -253,14 +253,14 @@
       "name": "com.tencent.mobileqq_QQ_群头像支持（不装则显示具体群友头像）",
       "sha": "6384a45ab3089ec828d8b95ed4fc125fe2d10de40a012c567dde6c9ed5920446",
       "size": 408,
-      "updatedAt": "2026-08-26T16:04:17+08:00"
+      "updatedAt": "2026-09-17T15:17:32+08:00"
     },
     {
       "path": "com.tencent.mobileqq_QQ_群消息整形-群名标题前添加发送者.json",
       "name": "com.tencent.mobileqq_QQ_群消息整形-群名标题前添加发送者",
       "sha": "60f4ee95b0e8d46a9e14162a272bd70ddbeac3b330bc20d0601f6aa407d6ee70",
       "size": 541,
-      "updatedAt": "2026-08-26T16:04:17+08:00"
+      "updatedAt": "2026-09-17T15:17:32+08:00"
     },
     {
       "path": "com.tencent.mobileqq_QQ_群消息整形-群名移动至 subtext.json",
@@ -295,7 +295,7 @@
       "name": "icon/NotifyIconsSupportConfig",
       "sha": "46ec48156511f248343100ee22cfed711cd555c496b6cd05eb3ae49603caca28",
       "size": 1131229,
-      "updatedAt": "2026-06-09T23:24:18+08:00"
+      "updatedAt": "2026-09-17T15:17:31+08:00"
     }
   ]
 }
